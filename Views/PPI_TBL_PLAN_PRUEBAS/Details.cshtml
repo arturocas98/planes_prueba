@@ -1,0 +1,115 @@
+﻿@model planes_prueba.PPI_TBL_PLAN_PRUEBAS
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>Plan</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CODIGO_PROYECTO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CODIGO_PROYECTO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FECHA_CREACION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FECHA_CREACION)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FECHA_EVALUACION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FECHA_EVALUACION)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FECHA_MODIFICACION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FECHA_MODIFICACION)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DESCRIPCION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DESCRIPCION)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DATOS_PRUEBA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DATOS_PRUEBA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CONCLUSIONES)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CONCLUSIONES)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MODULO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MODULO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CREADOR_POR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CREADOR_POR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ESTADO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ESTADO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PPI_TBL_LIDER_PDS.NOMBRE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PPI_TBL_LIDER_PDS.NOMBRE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PPI_TBL_LIDER_PDS1.NOMBRE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PPI_TBL_LIDER_PDS1.NOMBRE)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.ID_PRUEBAS }) |
+    @Html.ActionLink("Regresar", "Index")
+</p>
